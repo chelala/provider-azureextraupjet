@@ -1,0 +1,16 @@
+apiVersion: systemtopiceventsubscription.idp.microserfin.com/v1alpha1
+kind: SystemTopicEventSubscription
+metadata:
+  annotations:
+    meta.upbound.io/example-id: systemtopiceventsubscription/v1alpha1/systemtopiceventsubscription
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    name: example-event-subscription
+    resourceGroupName: ${azurerm_resource_group.example.name}
+    storageQueueEndpoint:
+    - queueName: ${azurerm_storage_queue.example.name}
+      storageAccountId: ${azurerm_storage_account.example.id}
+    systemTopic: ${azurerm_eventgrid_system_topic.example.name}

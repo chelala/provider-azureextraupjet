@@ -1,4 +1,4 @@
-module github.com/upbound/upjet-provider-template
+module github.com/chelala/provider-azureextraupjet
 
 go 1.19
 

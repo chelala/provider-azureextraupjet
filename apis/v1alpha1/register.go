@@ -13,7 +13,7 @@ import (
 
 // Package type metadata.
 const (
-	Group   = "template.upbound.io"
+	Group   = "azureextraupjet.idp.microserfin.com"
 	Version = "v1alpha1"
 )
 
