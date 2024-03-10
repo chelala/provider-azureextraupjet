@@ -68,7 +68,7 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 			"client_secret":   creds["clientSecret"],
 			"tenant_id":       creds["tenantId"],
 			"subscription_id": creds["subscriptionId"],
-			// "features":        map[string]any{},
+			"features":        map[string]any{},
 		}
 		return ps, nil
 	}

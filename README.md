@@ -5,8 +5,9 @@ https://github.com/crossplane/upjet/blob/main/docs/generating-a-provider.md
 ```shell
 export PATH="$PATH:$HOME/go/bin" && make generate
 
-up xpkg push xpkg.upbound.io/chelala/provider-azureextra:v0.0.3  -f linux_arm64/provider-azureextra-v0.0.0-6.g4c71540.xpkg,linux_amd64/provider-azureextra-v0.0.0-6.g4c71540.xpkg
+up xpkg push xpkg.upbound.io/chelala/provider-azureextraupjet:v0.0.2 -f linux_arm64/provider-azureextraupjet-v0.0.0-3.g73e7ffe.xpkg,linux_amd64/provider-azureextraupjet-v0.0.0-3.g73e7ffe.xpkg
 
+kubectl -n crossplane-system logs -f provider-azureextraupjet-40512a196139-dbc9dccd5-96dpc
 ```
 
 `provider-azureextraupjet` is a [Crossplane](https://crossplane.io/) provider that
